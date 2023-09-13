@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Máy Tính</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2"><input type="number" id="firstNumber"/> </td>
+        <td colspan="2"><input type="number" id="secondNumber"/></td>
+
+    <tr>
+        <td><button onclick="Addition()">Addition(+)</button> </td>
+        <td><button onclick="Subtraction()">Subtraction(-)</button> </td>
+        <td><button onclick="Multiplication()">Multiplication(*)</button> </td>
+        <td><button onclick="Division()">Division(/)</button> </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function Addition() {
+        var firstNumber = +document.getElementById("firstNumber").value;
+        var secondNumber = +document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = firstNumber + secondNumber;
+    }
+    function Subtraction() {
+        var firstNumber = +document.getElementById("firstNumber").value;
+        var secondNumber = +document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = firstNumber - secondNumber;
+    }
+    function Multiplication() {
+        var firstNumber = +document.getElementById("firstNumber").value;
+        var secondNumber = +document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = firstNumber * secondNumber;
+    }
+    function Division() {
+        var firstNumber = +document.getElementById("firstNumber").value;
+        var secondNumber = +document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = firstNumber / secondNumber;
+    }
+
+
+</script>
+</body>
+</html>
